@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  pading: 0;
+}
+:root {
+  --pharagraphFontSize: 22px;
+  --imgCaptionFontSize: 36px;
+  --h1FontSize: 72px;
+  --h2FontSize: 36px;
+  --subTitleFontSize: 36px;
+}
+main {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(223,226,228,1) 53%, rgba(205,206,208,1) 100%);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#title {
+  text-align: center;
+}
+h1 {
+  font-size: var(--h1FontSize);
+  padding: 0.4em 1em;
+}
+#subTitle {
+  font-size: var(--subTitleFontSize);
+  padding: 0.4em 1em;
+  text-align: center;
+}
+#img-div {
+  text-align: center;
+  padding: 0 3vw;
+}
+#img {
+  border-radius: 50%;
+  padding: 1%;
+  border: solid black 1px;
+  max-width: 100%;
+  height: auto;
+}
+figcaption {
+  font-size: var(--imgCaptionFontSize);
+  padding: 0.4em 1em;
+}
+.animation {
+  opacity: 0;
+  animation: animateText 0.8s forwards;
+}
+.animation1 {
+  animation-delay: 0.4s;
+}
+.animation2 {
+  animation-delay: 0.8s
+}
+@keyframes animateText {
+  0% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+h2 {
+  text-align: center;
+  font-size: var(--h2FontSize);
+  padding: 0.4em 1em;
+}
+p {
+  font-size: var(--pharagraphFontSize);
+  text-align: justify;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+footer {
+  text-align: center;
+  margin: 1em;
+}
+a {
+  color: black;
+  transition: 0.5s ease-out;
+}
+a:hover {
+  color: gray;
+}
+#link {
+  text-align: center;
+  padding: 1em;
+}
+
+@media screen and (max-width: 1299px) and (min-width: 764px){
+  :root {
+    --pharagraphFontSize: 20px;
+    --imgCaptionFontSize: 32px;
+    --h1FontSize: 64px;
+    --h2FontSize: 32px;
+    --subTitleFontSize: 32px;
+  }
+}
+@media screen and (max-width: 764px) and (min-width: 330px){
+  :root {
+    --pharagraphFontSize: 16px;
+    --imgCaptionFontSize: 26px;
+    --h1FontSize: 54px;
+    --h2FontSize: 26px;
+    --subTitleFontSize: 26px;
+  }
+}
+@media screen and (max-width: 330px) and (min-width: 1px){
+  :root {
+    --pharagraphFontSize: 14px;
+    --imgCaptionFontSize: 22px;
+    --h1FontSize: 42px;
+    --h2FontSize: 22px;
+    --subTitleFontSize: 22px;
+  }
+}
